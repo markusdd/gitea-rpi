@@ -1,5 +1,5 @@
 FROM resin/armhf-alpine:latest
-MAINTAINER Patrick Eichmann <phreakazoid@phreakazoid.com>
+MAINTAINER markusdd
 
 ARG BUILD_DATE
 ARG VCS_REF
