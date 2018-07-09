@@ -6,9 +6,9 @@ ARG VCS_REF
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.docker.dockerfile="/Dockerfile" \
       org.label-schema.name="gitea-rpi" \
-      org.label-schema.url="https://github.com/phreakazoid/gitea-rpi \
+      org.label-schema.url="https://github.com/markusdd/gitea-rpi \
       org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/phreakazoid/gitea-rpi.git" \
+      org.label-schema.vcs-url="https://github.com/markusdd/gitea-rpi.git" \
       org.label-schema.vcs-type="Git"
 
 RUN [ "cross-build-start" ]
