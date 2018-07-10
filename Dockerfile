@@ -14,7 +14,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 RUN [ "cross-build-start" ]
 
 ## SET NEWEST VERSION & DOWNLOAD URL
-ENV VERSION 1.4.2
+ENV VERSION 1.4.3
 
 RUN apk --no-cache add \
     su-exec \
