@@ -14,7 +14,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 RUN [ "cross-build-start" ]
 
 ## SET NEWEST VERSION & DOWNLOAD URL
-ENV VERSION 1.8.2
+ENV VERSION 1.8.3
 
 RUN apk --no-cache add \
     su-exec \
@@ -47,7 +47,7 @@ ENV GITEA_CUSTOM /data/gitea
 ENV GODEBUG=netdns=go
 
 ## GET DOCKER FILES
-RUN svn export https://github.com/go-gitea/gitea/trunk/docker ./ --force
+RUN svn export https://github.com/go-gitea/gitea/trunk/docker/root ./ --force
 
 ### GET GITEA GO FILE FOR RPI
 RUN mkdir -p /app/gitea && \
